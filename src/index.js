@@ -9,6 +9,11 @@ const appStates = {
   Blog: "<h1>Blog</h1>"
 };
 
+document.addEventListener(onDOMContentLoaded, () => {
+  // Set some state
+  console.log("Set state according to URL")
+})
+
 // Setting current State.
 let currentState = appStates.Home; // Default state of the app!
 app.innerHTML = currentState;
