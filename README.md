@@ -13,3 +13,5 @@ Be sure to -
 You're free to make any tweaks to this code,
 If you have any trouble understanding any code you can open an issue.
 But be sure to google it first.
+
+This repo has been implemented by @yashguptaz from scratch. A follow would be appreciated.
