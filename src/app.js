@@ -17,11 +17,11 @@ Things to accomplish -
   main index file and that file can check for a 404 or route.
 
 2. Change State on Click
-  - Get the DOM link Element/Create the link element 
-  - Change the state on Click
+  - Get the DOM <a> Element/Create the link element 
+  - Change the state and URL on Click
   
 3. Create new routes.
-  - Views with JSX
+  - Views with template tags in HTML
   - Create or Get Element from the DOM
 
 */
