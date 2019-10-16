@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Routing from Scratch</title>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Routing from Scratch</title>
-	<link rel="stylesheet" type="text/css" href="src/styles.css">
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<nav>
-		<div id="nav-container">
-			<a href="/home">Home</a>
-			<a href="/about">About</a>
-			<a href="/blog">Blog</a>
-		</div>
-	</nav>
-	<div id="container">
-		<div id="app">
-
-		</div>
-	</div>
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <nav>
+      <div id="nav-container">
+        <a href="/home" id="home">Home</a>
+        <a href="/about" id="about">About</a>
+        <a href="/contact" id="contact">Contact</a>
+        <a href="/blog" id="blog">Blog</a>
+      </div>
+    </nav>
+    <div id="container">
+      <div id="app"></div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
