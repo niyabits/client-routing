@@ -25,6 +25,7 @@ Things to accomplish -
   - Create or Get Element from the DOM
 
 */
+// @TODO: Set up backend so that every URL is directed to index and checked for a URL or 404
 
 // Instantiate an array to store the information of all the routes
 const routeArray = [];
@@ -50,6 +51,9 @@ const aboutView = `<h1>About</h1>`;
 const contactView = `<h1>Contact</h1>`;
 const blogView = `<h1>Blog</h1>`;
 
+// Default view
+app.innerHTML = homeView;
+
 // Making our new Route objects
 const home = new Route('home', '/', homeView, 'nav #home');
 const about = new Route('about', '/about', aboutView, 'nav #about');
@@ -61,17 +65,19 @@ let curLocation = window.location.pathname;
 // console.log(routeArray);
 
 // Initialize an onClick function to switch state.
-const onRouteClick = (query, view) => {
+const onRouteClick = (query, view, name, url) => {
   const element = document.querySelector(query);
-  console.log(element);
 
   element.addEventListener('click', e => {
     app.innerHTML = view;
+
+    routeState = { page: name };
+    history.pushState(routeState, name, url);
     e.preventDefault();
   });
 };
 
 routeArray.forEach(route => {
-  // console.log(route.query, route.view);
-  onRouteClick(route.query, route.view);
+  console.log(route);
+  onRouteClick(route.query, route.view, route.name, route.url);
 });
