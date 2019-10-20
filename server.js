@@ -7,6 +7,6 @@ app.get("*", (req, res) => {
   res.sendFile('./src/index.html', { root: __dirname })
 })
 
-const server = app.listen(8080, () => {
+const server = app.listen(3000, () => {
   console.log('Server started at port: ' + server.address().port)
 })
