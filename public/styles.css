@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:400,500,700&lang=en');
+
+body {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 18px;
+  box-shadow: 0 4px 6px 0 hsla(0,0%,30%, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: hsla(0, 0%, 40%);
+  padding: 12px 24px;
+}
+
+nav a:hover {
+  color: hsla(0, 0%, 20%);
+}
+
+#nav-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#container {
+  max-width: 724px;
+  margin: auto;
+  padding: 12px 24px;
+  color: hsla(0,0%, 40%)
+}
