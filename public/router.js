@@ -41,7 +41,7 @@ const blog = new Route('blog', '/blog', blogView, 'nav #blog');
 let curLocation = window.location.pathname;
 
 // Initiate the first route
-curLocation == '/' ? history.pushState({ page: 'home' }, 'home', '/') : null;
+curLocation == '/' && history.pushState({ page: 'home' }, 'home', '/');
 
 routeArray.every(route => {
   // Check if the current URL matches the URL of any of our routes
